@@ -1,1 +1,1 @@
-# pailin-about-page
+# The static about page for Pailin Abroad
