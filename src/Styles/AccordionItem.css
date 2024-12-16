@@ -1,0 +1,15 @@
+.accordion-item.open {
+  border-color: #ff6865;
+}
+
+.accordion-header {
+  color: #222;
+}
+
+.accordion-header span {
+  transition: color 0.3s;
+}
+
+.accordion-item.open .accordion-header span {
+  color: #ff6865;
+}

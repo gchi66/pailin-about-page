@@ -1,42 +1,94 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Adjusted to start from the top of the screen */
+  height: 100vh; /* Full viewport height to take up the entire screen */
+  width: 100vw; /* Full viewport width to take up the entire screen */
+  overflow-y: auto; /* Enables vertical scrolling */
+  background-color: #fff8f6;
+  position: relative;
+}
+
+.app-container {
+  background-color: #fff8f6;
   text-align: center;
+  padding: 2rem;
+  max-width: 60rem; /* Ensure the width of the container doesn't go beyond a certain limit */
+  width: 100%; /* Takes full width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers the content vertically */
+  align-items: center; /* Centers the content horizontally */
+  box-sizing: border-box;
+  position: relative;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.page-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #222;
+  font-family: "Mitr", sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Accordion Styles */
+.accordion-container {
+  max-width: 60rem;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.accordion-item {
+  border: 0.2rem solid #ff6865;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: border 0.3s;
 }
 
-.card {
-  padding: 2em;
+.accordion-header {
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: .8rem;
 }
 
-.read-the-docs {
-  color: #888;
+.accordion-header:hover {
+  background-color: #ffecec;
+}
+
+.accordion-arrow {
+  font-size: 1.2rem;
+  color: #ff6865;
+}
+
+.accordion-content {
+  padding: 1rem;
+  background-color: #fff;
+  color: #444;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Image Styling */
+.image-container {
+  margin-top: 2rem;
+}
+
+.pailin-image {
+  width: 9.375rem; /* 150px converted to rem */
+  height: 9.375rem; /* 150px converted to rem */
+  object-fit: cover;
+  border-radius: 50%;
+  display: inline-block;
 }
