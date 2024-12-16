@@ -3,6 +3,7 @@
   text-align: center;
   padding: .4rem; /* Space around the text */
   width: 100vw;
+  z-index: 1000;
 }
 
 .header-title {
