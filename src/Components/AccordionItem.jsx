@@ -11,7 +11,7 @@ function AccordionItem({ title, content }) {
   return (
     <div className={`accordion-item ${isOpen ? 'open' : ''}`}>
       <button className="accordion-header" onClick={toggleAccordion}>
-        <h1><span>{title}</span></h1>
+        <p><span>{title}</span></p>
         <span className="accordion-arrow">{isOpen ? '▲' : '▼'}</span>
       </button>
       {isOpen && <div className="accordion-content"><p>{content}</p></div>}

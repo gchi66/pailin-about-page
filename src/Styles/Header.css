@@ -1,0 +1,13 @@
+.header-container {
+  background-color: #0099ff; /* Blue background color */
+  text-align: center;
+  padding: .4rem; /* Space around the text */
+  width: 100vw;
+}
+
+.header-title {
+  font-size: .7rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}

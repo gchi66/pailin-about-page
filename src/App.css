@@ -44,11 +44,12 @@
   margin-bottom: 1rem;
   overflow: hidden;
   transition: border 0.3s;
+  width: 47rem;
 }
 
 .accordion-header {
   width: 100%;
-  padding: 1rem;
+  padding: .5rem 3rem;
   background-color: #fff;
   border: none;
   outline: none;
@@ -60,7 +61,8 @@
   align-items: center;
   cursor: pointer;
   transition: background-color 0.3s;
-  font-size: .8rem;
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .accordion-header:hover {
@@ -91,4 +93,9 @@
   object-fit: cover;
   border-radius: 50%;
   display: inline-block;
+}
+
+.bottom-contact p{
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
 }

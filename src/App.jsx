@@ -1,5 +1,6 @@
 import React from 'react';
 import AccordionItem from './Components/AccordionItem';
+import "./Styles/Header.css";
 import './App.css';
 import PailinImage from './assets/Pailin-blue.png';
 
@@ -16,21 +17,16 @@ function App() {
         "Pailin is a passionate educator dedicated to making English learning accessible and enjoyable for Thai students.",
     },
     {
-      title: "What makes Pailin Abroad special?",
+      title: "Why choose Pailin Abroad?",
       content:
         "Pailin Abroad offers a unique approach by combining language learning with cultural insights and real-life applications.",
-    },
-    {
-      title: "What kind of learners would benefit from this website?",
-      content:
-        "Anyone looking to improve their English skills with a focus on speaking, listening, and understanding cultural contexts.",
     },
   ];
 
   return (
     <div className="page-container">
       <div className="app-container">
-        <h1 className="page-title">ABOUT PAILIN ABROAD</h1>
+        <h1 className="page-title">PAILIN ABROAD</h1>
         <div className="accordion-container">
           {faqData.map((item, index) => (
             <AccordionItem key={index} title={item.title} content={item.content} />
@@ -38,6 +34,10 @@ function App() {
         </div>
         <div className="image-container">
           <img src={PailinImage} alt="Pailin" className="pailin-image" />
+        </div>
+        <div className='bottom-contact'>
+          <p>Have a question?</p>
+          <p>Email us at pailinabroad@gmail.com!</p>
         </div>
       </div>
     </div>
