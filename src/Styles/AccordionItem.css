@@ -18,8 +18,7 @@
 @media (max-width: 768px) {
   .accordion-item.open .accordion-header span {
     color: #ff6865;
-    border-radius: 2rem;
-    margin-bottom: -1rem;
+    border-radius: 2rem !important;
   }
   .accordion-paragraph {
     margin-bottom: 0rem;
@@ -29,6 +28,6 @@
 @media (max-width: 480px) {
   .accordion-item.open .accordion-header span {
     color: #ff6865;
-    border-radius: 2rem;
+    border-radius: 2rem !important;
   }
 }

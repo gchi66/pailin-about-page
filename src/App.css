@@ -193,6 +193,10 @@
     gap: 1.5rem;
   }
 
+  .accordion-item {
+    border-radius: 2rem ;
+  }
+
 
   .accordion-header {
     font-size: 1.1rem;
