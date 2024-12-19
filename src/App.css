@@ -55,7 +55,7 @@
 
 .accordion-item {
   border: 0.1rem solid #FF4242;
-  border-radius: 3rem;
+  border-radius: 2rem;
   box-shadow: 0.17rem 0.17rem 0 #FE7979, inset 0 0 0.1rem #FE7979;
   margin-bottom: 1rem;
   /* overflow: hidden; */
@@ -184,13 +184,12 @@
   .accordion-item {
     width: 100%; /* Full width of the container */
     padding: .8rem .8rem;
-    border-radius: 3rem 3rem 3rem 3rem; /* Rounded only on the right side */
     margin-left: 0;    /* No left margin to start from the edge */
     margin-right: 0;   /* No right margin */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: .5rem;
   }
 
   .accordion-item {
