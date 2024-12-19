@@ -1,9 +1,9 @@
-.accordion-item.open {
-  border-color: #ff6865;
+.accordion-paragraph {
+  margin-bottom: 1rem;
 }
 
-.accordion-header {
-  color: #222;
+.p {
+  margin-bottom: 1rem;
 }
 
 .accordion-header span {

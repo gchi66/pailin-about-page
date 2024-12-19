@@ -1,9 +1,10 @@
 .header-container {
-  background-color: #0099ff; /* Blue background color */
+  background-color: #27b2ed; /* Blue background color */
   text-align: center;
   padding: .4rem; /* Space around the text */
   width: 100vw;
   z-index: 1000;
+  margin-bottom: 1rem;
 }
 
 .header-title {
