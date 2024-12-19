@@ -22,7 +22,7 @@ function App() {
       content: (
         <>
           <div>
-            Pailin, a 21-year-old Thai girl from Bangkok, is at the heart of the platform. While she embarks on a year-long study abroad program in Los Angeles, you will follow along as she adapts to a new country, makes friends, interacts with her hostW family, explores a budding romance, and embraces a different culture. By getting to know Pailin, you will feel connected to her story and motivated to move through the narrative, improving your English along the way.
+            Pailin, a 21-year-old Thai girl from Bangkok, is at the heart of the platform. While she embarks on a year-long study abroad program in Los Angeles, you will follow along as she adapts to a new country, makes friends, interacts with her host family, explores a budding romance, and embraces a different culture. By getting to know Pailin, you will feel connected to her story and motivated to move through the narrative, improving your English along the way.
           </div>
           <div className='pailin-intro-container'>
             <div className="pailin-intro">
