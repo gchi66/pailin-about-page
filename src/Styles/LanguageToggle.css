@@ -1,0 +1,36 @@
+/* Language Toggle */
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: .1vh;
+  font-size: 1.8vh;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.language-toggle span {
+  cursor: pointer;
+  color: #ff5050;
+  padding: .3vh .3vh;
+  transition: color 0.2s, background-color 0.2s;
+  line-height: 1;
+}
+
+.language-toggle span.active {
+  color: white;
+  background-color: #ff5050;
+  border-radius: .6vh;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .language-toggle {
+    margin-bottom: 0rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .language-toggle {
+    margin-bottom: 0rem;
+  }
+}

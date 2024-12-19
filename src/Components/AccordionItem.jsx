@@ -3,7 +3,7 @@ import "../Styles/AccordionItem.css";
 
 
 
-  function AccordionItem({ title, content, onToggle }) {
+  function AccordionItem({ title, content, language, onToggle }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleAccordion = () => {
@@ -15,20 +15,18 @@ import "../Styles/AccordionItem.css";
     return (
       <div className={`accordion-item ${isOpen ? "open" : ""}`}>
         <button className="accordion-header" onClick={toggleAccordion}>
-          <span>
-            <span>{title}</span>
-          </span>
+          <p><span>{title}</span></p>
           <span className="accordion-arrow">{isOpen ? "▲" : "▼"}</span>
         </button>
         {isOpen && (
           <div className="accordion-content">
-            {Array.isArray(content)
-              ? content.map((paragraph, index) => (
-                  <div key={index} className="accordion-paragraph">
-                    {paragraph}
-                  </div>
-                ))
-              : <div>{content}</div>}
+            {Array.isArray(content[language]) ? (
+              content[language].map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))
+            ) : (
+              <p>{content[language]}</p>
+            )}
           </div>
         )}
       </div>
