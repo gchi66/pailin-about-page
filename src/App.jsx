@@ -80,7 +80,7 @@ function App() {
           <div className="image-container">
             <img src={PailinImage} alt="Pailin" className="pailin-image" />
           </div>
-          <div className="bottom-contact">
+          <div className={`bottom-contact ${areAllClosed ? 'margin-bottom' : ''}`}>
             <p>Have a question?</p>
             <p>Email us at pailinabroad@gmail.com!</p>
           </div>
