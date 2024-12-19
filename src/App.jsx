@@ -3,6 +3,7 @@ import AccordionItem from './Components/AccordionItem';
 import "./Styles/Header.css";
 import './App.css';
 import PailinImage from './assets/Pailin-blue.png';
+import PailinBlackLine from './assets/Pailin-black-line.png'
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 
@@ -18,8 +19,19 @@ function App() {
     },
     {
       title: "Who is Pailin?",
-      content:
-        "Pailin, a 21-year-old Thai girl from Bangkok, is at the heart of the platform. While she embarks on a year-long study abroad program in Los Angeles, you will follow along as she adapts to a new country, makes friends, interacts with her host family, explores a budding romance, and embraces a different culture. By getting to know Pailin, you will feel connected to her story and motivated to move through the narrative, improving your English along the way.",
+      content: (
+        <>
+          <div>
+            Pailin, a 21-year-old Thai girl from Bangkok, is at the heart of the platform. While she embarks on a year-long study abroad program in Los Angeles, you will follow along as she adapts to a new country, makes friends, interacts with her hostW family, explores a budding romance, and embraces a different culture. By getting to know Pailin, you will feel connected to her story and motivated to move through the narrative, improving your English along the way.
+          </div>
+          <div className='pailin-intro-container'>
+            <div className="pailin-intro">
+              <img src={PailinBlackLine} alt="Pailin Black Line" className="pailin-black-line-image" />
+              <p>Hi, I'm Pailin!</p>
+            </div>
+          </div>
+        </>
+      ),
     },
     {
       title: "Why choose Pailin Abroad?",
