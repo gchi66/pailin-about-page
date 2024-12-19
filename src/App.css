@@ -59,7 +59,7 @@
   box-shadow: 0.17rem 0.17rem 0 #FE7979, inset 0 0 0.1rem #FE7979;
   margin-bottom: 1rem;
   /* overflow: hidden; */
-  transition: border 0.3s;
+  transition: border 0.2s;
   width: 47rem;
   padding: .8rem .5rem .8rem;
   background-color: white;
@@ -159,4 +159,108 @@
 
 .margin-bottom {
   margin-bottom: 2rem;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .app-container {
+    padding: 1rem;
+  }
+
+  .page-title {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: .8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .accordion-container {
+    width: 100%;
+  }
+  .accordion-item {
+    width: 100%; /* Full width of the container */
+    padding: .8rem .8rem;
+    border-radius: 3rem 3rem 3rem 3rem; /* Rounded only on the right side */
+    margin-left: 0;    /* No left margin to start from the edge */
+    margin-right: 0;   /* No right margin */
+    box-sizing: border-box;
+  }
+
+  .accordion-header {
+    font-size: 1.1rem;
+    padding: .5rem 1rem;
+  }
+
+  .accordion-arrow {
+    font-size: 1rem;
+  }
+
+  .accordion-content {
+    font-size: .85rem;
+    padding: 0rem 1rem .6rem 1rem;
+  }
+
+  .pailin-intro-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pailin-intro {
+    flex-direction: column;
+  }
+
+  .pailin-intro img {
+    width: 8rem; /* Smaller image size on mobile */
+  }
+
+  .pailin-intro p {
+    font-size: 1rem;
+  }
+
+  .pailin-image {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .bottom-contact p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .tagline {
+    font-size: .75rem;
+    margin-bottom: 1rem;
+  }
+
+  .accordion-header {
+    font-size: 1rem;
+    padding: .5rem;
+  }
+
+  .accordion-content {
+    font-size: .8rem;
+  }
+
+  .pailin-intro img {
+    width: 7rem;
+  }
+
+  .pailin-image {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .bottom-contact p {
+    font-size: .9rem;
+  }
 }
