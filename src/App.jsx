@@ -7,6 +7,7 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 
 function App() {
+
   const faqData = [
     {
       title: "What is Pailin Abroad?",
@@ -32,7 +33,7 @@ function App() {
 
   // State to track open/closed status for all accordion items
   const [accordionStates, setAccordionStates] = useState(
-    faqData.map(() => false) // Initialize all to false (closed)
+    faqData.map(() => false)
   );
 
   const handleToggle = (index, isOpen) => {

@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; /* Adjusted to start from the top of the screen */
-  height: 100dvh;
+  min-height: 100vh;
   width: 100%;
   overflow-y: auto;
   background-color: #fdf8f8;
@@ -58,7 +58,7 @@
   border-radius: 3rem;
   box-shadow: 0.17rem 0.17rem 0 #FE7979, inset 0 0 0.1rem #FE7979;
   margin-bottom: 1rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   transition: border 0.3s;
   width: 47rem;
   padding: .8rem .5rem .8rem;
@@ -68,7 +68,7 @@
 .accordion-header {
   width: 100%;
   padding: .5rem 3rem;
-  background-color: #fff;
+  background-color: transparent;
   border: none;
   outline: none;
   text-align: left;
@@ -95,7 +95,7 @@
 
 .accordion-content {
   padding: 0rem 3rem .6rem 3rem;
-  background-color: #fff;
+  background-color: transparent;
   color: #1e1e1e;
   font-weight: 500;
   text-align: left;
