@@ -12,7 +12,10 @@ function App() {
 
   const faqData = [
     {
-      title: "What is Pailin Abroad?",
+      title: {
+        EN: "What is Pailin Abroad?",
+        TH: "Pailin Abroad คืออะไร?",
+      },
       content: {
         EN: [
           "Pailin Abroad is an English-learning website for Thai speakers, offering over 200 lessons based on audio conversations. As the conversations become more advanced, so will the specific grammar or vocabulary topic that the lesson focuses on. You will encounter this topic multiple times throughout the conversation, allowing you to hear it used in a natural context.",
@@ -25,7 +28,10 @@ function App() {
       },
     },
     {
-      title: "Who is Pailin?",
+      title: {
+        EN: "Who is Pailin?",
+        TH: "ไพลินคือใคร?",
+      },
       content: {
         EN: (
           <>
@@ -56,7 +62,10 @@ function App() {
       },
     },
     {
-      title: "Why choose Pailin Abroad?",
+      title: {
+        EN: "Why choose Pailin Abroad?",
+        TH: "ทำไมต้องเลือก Pailin Abroad?",
+      },
       content: {
         EN: [
           "Pailin Abroad was created by two Americans who lived in Thailand for years, so the lessons have been designed to address the unique cultural and linguistic differences between the two countries. With a focus on real-life conversations with friends, family, love interests, and acquaintances, you will gain practice English skills, rather than the outdated and formal language often taught from textbooks.",
@@ -71,6 +80,17 @@ function App() {
       },
     },
   ];
+
+  const textContent = {
+    tagline: {
+      EN: "Effective English learning for Thai speakers with practical, conversation-based lessons.",
+      TH: "การเรียนภาษาอังกฤษอย่างมีประสิทธิภาพสำหรับผู้พูดภาษาไทยด้วยบทเรียนที่เน้นการสนทนาในชีวิตจริง.",
+    },
+    contact: {
+      EN: ["Have a question?", "Email us at pailinabroad@gmail.com"],
+      TH: ["มีคำถามหรือไม่?", "ส่งอีเมลถึงเราที่ pailinabroad@gmail.com"],
+    },
+  };
 
   // State to track open/closed status for all accordion items
   const [accordionStates, setAccordionStates] = useState(
@@ -97,12 +117,11 @@ function App() {
 
   return (
     <>
-      <Header />
+      <Header language={language} />
       <div className="page-container">
         <div className="app-container">
           <h1 className="page-title">PAILIN ABROAD</h1>
-          <p className='tagline'>Effective English learning for Thai speakers with practical, conversation-based lessons.
-          </p>
+          <p className="tagline">{textContent.tagline[language]}</p>
           <div className="language-toggle">
             <span
               className={language === "EN" ? "active" : ""}
@@ -122,10 +141,10 @@ function App() {
             {faqData.map((item, index) => (
               <AccordionItem
                 key={index}
-                title={item.title}
+                title={item.title[language]}
                 content={item.content}
                 language={language}
-                onToggle={(isOpen) => handleToggle(index, isOpen)} // Pass index to track individual items
+                onToggle={(isOpen) => handleToggle(index, isOpen)}
               />
             ))}
           </div>
@@ -133,8 +152,8 @@ function App() {
             <img src={PailinImage} alt="Pailin" className="pailin-image" />
           </div>
           <div className={`bottom-contact ${areAllClosed ? 'margin-bottom' : ''}`}>
-            <p>Have a question?</p>
-            <p>Email us at pailinabroad@gmail.com!</p>
+            <p>{textContent.contact[language][0]}</p>
+            <p>{textContent.contact[language][1]}</p>
           </div>
         </div>
       </div>

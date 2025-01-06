@@ -26,13 +26,13 @@
 @media (max-width: 768px) {
   .language-toggle {
     margin-bottom: 0rem;
-    font-size: 2.3dvh;
+    font-size: 3dvh;
   }
 }
 
 @media (max-width: 480px) {
   .language-toggle {
     margin-bottom: 0rem;
-    font-size: 2.3dvh;
+    font-size: 3dvh;
   }
 }
