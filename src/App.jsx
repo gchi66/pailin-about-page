@@ -68,7 +68,7 @@ function App() {
       },
       content: {
         EN: [
-          "Pailin Abroad was created by two Americans who lived in Thailand for years, so the lessons have been designed to address the unique cultural and linguistic differences between the two countries. With a focus on real-life conversations with friends, family, love interests, and acquaintances, you will gain practice English skills, rather than the outdated and formal language often taught from textbooks.",
+          "Pailin Abroad was created by two Americans who lived in Thailand for years, so the lessons have been designed to address the unique cultural and linguistic differences between the two countries. With a focus on real-life conversations with friends, family, love interests, and acquaintances, you will gain practical English skills, rather than the outdated and formal language often taught from textbooks.",
           "In the real world, native speakers talk at lightning-fast speeds, and you can't always ask them to slow down or repeat themselves. With Pailin Abroad, you can slow down and replay the audio until you fully grasp the conversation. Over time, you’ll move past translating every word in your head from English to Thai and will start naturally comprehending a conversation in English.",
           "We know there are plenty of ESL learning platforms out there. Pailin Abroad stands out by combining a compelling narrative, natural English, and complete translations into Thai, so that Thai speakers of all levels will find learning English accessible and engaging.",
         ],
