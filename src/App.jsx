@@ -83,7 +83,7 @@ function App() {
 
   const textContent = {
     tagline: {
-      EN: "Effective English learning for Thai speakers with practical, conversation-based lessons.",
+      EN: "Effective English learning for Thai speakers through practical, conversation-based lessons.",
       TH: "การเรียนภาษาอังกฤษอย่างมีประสิทธิภาพสำหรับผู้พูดภาษาไทยด้วยบทเรียนที่เน้นการสนทนาในชีวิตจริง.",
     },
     contact: {
